@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lobster&display=swap');
     * {
         margin: 0;
         padding: 0;
@@ -28,14 +27,15 @@ const GlobalStyle = createGlobalStyle`
     }
     h2 {
         font-weight: lighter;
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
     h3 {
         color: #fff;
+        font-size: 1rem;
     }
     h4 {
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     a {
         font-size: 1rem;
@@ -47,7 +47,7 @@ const GlobalStyle = createGlobalStyle`
     p {
         padding: 3rem 0;
         color: #ccc;
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         line-height: 150%;
     }
 `;
