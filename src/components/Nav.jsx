@@ -31,7 +31,7 @@ const StyledNav = styled.nav`
    margin: auto;
    justify-content: space-between;
    align-items: center;
-   padding: 1rem 10rem;
+   padding: 1rem 8rem;
    background: #282828;
    a {
       color: #fff;

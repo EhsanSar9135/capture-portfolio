@@ -9,6 +9,7 @@ import ContactUs from "./pages/ContactUs";
 import OurWork from "./pages/OurWork";
 // Import React-Router
 import { Route, Switch } from "react-router-dom";
+import MovieDetail from "./pages/MovieDetail";
 
 const App = () => {
    return (
@@ -17,8 +18,9 @@ const App = () => {
          <Nav />
          <Switch>
             <Route path="/" exact component={AboutUs} />
-            <Route path="/work" component={OurWork} />
-            <Route path="/contact" component={ContactUs} />
+            <Route path="/work" exact component={OurWork} />
+            <Route path="/work/:id" exact component={MovieDetail} />
+            <Route path="/contact" exact component={ContactUs} />
          </Switch>
       </>
    );
