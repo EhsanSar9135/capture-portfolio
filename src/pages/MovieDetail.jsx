@@ -80,6 +80,10 @@ const Awards = styled.div`
    display: flex;
    align-items: center;
    justify-content: space-around;
+   @media (max-width: 1500px) {
+      display: block;
+      margin: 1.5rem;
+   }
 `;
 
 const StyledAward = styled.section`
