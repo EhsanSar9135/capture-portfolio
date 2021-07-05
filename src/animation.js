@@ -14,7 +14,6 @@ export const pageAnimation = {
    },
    exit: {
       opacity: 0,
-      y: 300,
       transition: {
          duration: 0.5,
       },
@@ -46,4 +45,26 @@ export const photoAnimation = {
          duration: 0.75,
       },
    },
+};
+
+export const lineAnimation = {
+   hidden: { width: "0%" },
+   show: {
+      width: "100%",
+      transition: { duration: 0.75 },
+   },
+};
+
+export const slider = {
+   hidden: { x: "-130%", skew: "45deg" },
+   show: {
+      x: "100%",
+      skew: "0deg",
+      transition: { ease: "easeOut", duration: 0.5 },
+   },
+};
+
+export const sliderContainer = {
+   hidden: { opacity: 1 },
+   show: { opacity: 1, transition: { staggerChildren: 0.15, ease: "easeOut" } },
 };
