@@ -46,11 +46,18 @@ const StyledContact = styled(motion.div)`
    padding: 4rem 8rem;
    color: #353535;
    min-height: 90vh;
+   @media (max-width: 1500px) {
+      padding: 1.5rem;
+      font-size: 0.75rem;
+   }
 `;
 
 const Title = styled.div`
    margin-bottom: 3rem;
    color: #000;
+   @media (max-width: 1500px) {
+      margin-top: 3rem;
+   }
 `;
 
 const Hide = styled.div`
