@@ -12,9 +12,9 @@ const GlobalStyle = createGlobalStyle`
     }
     button {
         font-weight: bold;
-        font-size: 1rem;
+        font-size: 0.8rem;
         cursor: pointer;
-        padding: 1rem 2rem;
+        padding: 0.8rem 1.6rem;
         border: 3px solid #23d997;
         background: transparent;
         color: #fff;
@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
     }
     h2 {
         font-weight: lighter;
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
     h3 {
         color: #fff;
