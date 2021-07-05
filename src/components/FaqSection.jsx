@@ -4,11 +4,14 @@ import { About } from "../styles";
 import Toggle from "./Toggle";
 // Import Style & Animation
 import styled from "styled-components";
+import { scrollReveal } from "../animation";
 import { AnimateSharedLayout } from "framer-motion";
+import { useScroll } from "./useScroll";
 
-const FAQSection = () => {
+const FaqSection = () => {
+   const [element, controls] = useScroll();
    return (
-      <FAQ>
+      <FAQ ref={element} variants={scrollReveal} initial="hidden" animate={controls}>
          <h2>
             Any Questions <span>FAQ</span>
          </h2>
@@ -70,15 +73,15 @@ const FAQ = styled(About)`
       width: 100%;
    }
    .question {
-      padding: 3rem 0;
+      padding: 2rem 0;
       cursor: pointer;
    }
    .answer {
-      padding: 2rem 0;
+      padding: 1rem 0;
       p {
-         padding: 1rem 0;
+         padding: 0.5rem 0;
       }
    }
 `;
 
-export default FAQSection;
+export default FaqSection;

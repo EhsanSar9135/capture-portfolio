@@ -2,7 +2,7 @@ import React from "react";
 // Import Components
 import AboutSection from "../components/AboutSection";
 import ServicesSection from "../components/ServicesSection";
-import FAQSection from "../components/FAQSection";
+import FaqSection from "../components/FaqSection";
 // Import Animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
@@ -17,7 +17,7 @@ const AboutUs = () => {
       >
          <AboutSection />
          <ServicesSection />
-         <FAQSection />
+         <FaqSection />
       </motion.section>
    );
 };
