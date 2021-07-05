@@ -11,7 +11,12 @@ import { useScroll } from "./useScroll";
 const FaqSection = () => {
    const [element, controls] = useScroll();
    return (
-      <FAQ ref={element} variants={scrollReveal} initial="hidden" animate={controls}>
+      <FAQ
+         ref={element}
+         variants={scrollReveal}
+         initial="hidden"
+         animate={controls}
+      >
          <h2>
             Any Questions <span>FAQ</span>
          </h2>
